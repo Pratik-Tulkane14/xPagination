@@ -18,8 +18,7 @@ function App() {
       setAllEmployees(result.data);
       setEmployeeList(result.data.slice(0, ITEMS_PER_PAGE));
     } catch (error) {
-      console.log(error);
-
+      window.alert("failed to fetch data")
     }
   }
   const handlePageChange = (direction:"Previous"|"Next") => {
